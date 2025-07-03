@@ -127,42 +127,42 @@ const Documentation: React.FC = () => {
   const officialLinks = [
     {
       title: 'HubSpot-Salesforce Integration Setup',
-      url: 'https://knowledge.hubspot.com/integrations/how-to-set-up-and-install-the-hubspot-salesforce-integration',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Complete setup and installation guide'
     },
     {
       title: 'Managing Integration Settings',
-      url: 'https://knowledge.hubspot.com/integrations/how-to-manage-your-salesforce-integration-settings',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Configuration and field mapping management'
     },
     {
       title: 'Syncing Activities with Salesforce Tasks',
-      url: 'https://knowledge.hubspot.com/integrations/how-to-sync-hubspot-marketing-and-sales-activities-with-salesforce-tasks',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Marketing activity synchronization'
     },
     {
       title: 'Resolving Sync Errors',
-      url: 'https://knowledge.hubspot.com/integrations/how-to-resolve-hubspot-salesforce-integration-sync-errors',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Troubleshooting and error resolution'
     },
     {
       title: 'Field Mappings Reference',
-      url: 'https://knowledge.hubspot.com/integrations/hubspot-salesforce-field-mappings',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Complete field mapping documentation'
     },
     {
       title: 'Custom Objects Sync',
-      url: 'https://knowledge.hubspot.com/integrations/sync-salesforce-custom-objects-to-hubspot',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Enterprise custom object synchronization'
     },
     {
       title: 'Lead Scoring Integration',
-      url: 'https://knowledge.hubspot.com/marketing/create-and-edit-lead-scoring',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Lead scoring configuration and sync'
     },
     {
       title: 'Forms to Salesforce Campaigns',
-      url: 'https://knowledge.hubspot.com/forms/connect-forms-to-salesforce-campaigns',
+      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
       description: 'Campaign tracking and attribution'
     }
   ];
@@ -170,17 +170,17 @@ const Documentation: React.FC = () => {
   const communityResources = [
     {
       title: 'HubSpot Community - Integrations',
-      url: 'https://community.hubspot.com/t5/integrations/ct-p/integrations',
+                url: 'https://community.hubspot.com/',
       description: 'Community support and discussions'
     },
     {
       title: 'HubSpot Academy Integration Course',
-      url: '#',
+      url: 'https://academy.hubspot.com/',
       description: 'Comprehensive training and certification'
     },
     {
       title: 'Salesforce Trailhead Integration Modules',
-      url: '#',
+      url: 'https://trailhead.salesforce.com/',
       description: 'Salesforce-focused integration training'
     }
   ];

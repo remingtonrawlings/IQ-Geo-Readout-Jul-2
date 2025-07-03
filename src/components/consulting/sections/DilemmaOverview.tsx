@@ -210,7 +210,7 @@ const DilemmaOverview: React.FC = () => {
                     <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-gray-700">
                       <strong>Revenue Engine Protection:</strong> Current demand generation produces 85 active deals 
-                      with minimal staff - this efficiency should be preserved at all costs.
+                      on the Velocity team with minimal staff - this efficiency should be preserved at all costs.
                     </p>
                   </li>
                   <li className="flex items-start space-x-3">
