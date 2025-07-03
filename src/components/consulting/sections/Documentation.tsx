@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, ExternalLink, ChevronDown, ChevronUp, Book, Link } from 'lucide-react';
+import { FileText, ExternalLink, ChevronDown, ChevronUp, Book } from 'lucide-react';
 
 const Documentation: React.FC = () => {
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
@@ -124,48 +124,7 @@ const Documentation: React.FC = () => {
     }
   ];
 
-  const officialLinks = [
-    {
-      title: 'HubSpot-Salesforce Integration Setup',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Complete setup and installation guide'
-    },
-    {
-      title: 'Managing Integration Settings',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Configuration and field mapping management'
-    },
-    {
-      title: 'Syncing Activities with Salesforce Tasks',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Marketing activity synchronization'
-    },
-    {
-      title: 'Resolving Sync Errors',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Troubleshooting and error resolution'
-    },
-    {
-      title: 'Field Mappings Reference',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Complete field mapping documentation'
-    },
-    {
-      title: 'Custom Objects Sync',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Enterprise custom object synchronization'
-    },
-    {
-      title: 'Lead Scoring Integration',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Lead scoring configuration and sync'
-    },
-    {
-      title: 'Forms to Salesforce Campaigns',
-      url: 'https://help.hubspot.com/?_gl=1*17qaveo*_gcl_au*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*FPAU*OTcyMTg5OTIyLjE3NTAzNTE3Mzg.*_ga*NjI0MzMwMDgzLjE3NTAzNTE3Mzg.*_ga_LXTM6CQ0XK*czE3NTEzOTM1NDckbzEkZzAkdDE3NTEzOTM1NDckajYwJGwwJGgw*_fplc*R2JsTzQlMkJZaVZVeEdsaUtMMU9rMVlrUVl6eGZlSTdjM1ZXMXdidUI5VCUyRndjVmY2QVdjTUJrbWtCOHhlNERjRXJSVCUyQmEweTJnYzVNUlRVaDFsJTJGdExyTU81WnV0MzlwT3FVa3REUmd2d00lMkJLc01IZFRWamQlMkZhTyUyRlphVHJCNnclM0QlM0Q.',
-      description: 'Campaign tracking and attribution'
-    }
-  ];
+
 
   const communityResources = [
     {
@@ -287,39 +246,7 @@ const Documentation: React.FC = () => {
           </div>
         </div>
 
-        {/* Official Documentation Links */}
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-            Official Documentation Links
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {officialLinks.map((link, index) => (
-              <div key={index} className="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:shadow-sm transition-shadow duration-200">
-                <div className="flex items-start justify-between">
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      {link.title}
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-2">
-                      {link.description}
-                    </p>
-                    <a
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-1 text-sm text-blue-600 hover:text-blue-800"
-                    >
-                      <Link size={14} />
-                      <span>View Documentation</span>
-                      <ExternalLink size={12} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+
 
         {/* Community Resources */}
         <div className="mb-8">

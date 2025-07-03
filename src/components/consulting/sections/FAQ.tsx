@@ -12,9 +12,68 @@ const FAQ: React.FC = () => {
   const getCategoryColor = (category: string) => {
     const colors = {
       'High-Level': 'bg-gray-100 text-gray-800 border-gray-200',
-      'Tactical': 'bg-blue-100 text-blue-800 border-blue-200'
+      'Tactical': 'bg-blue-100 text-blue-800 border-blue-200',
+      'Implementation': 'bg-green-100 text-green-800 border-green-200'
     };
     return colors[category as keyof typeof colors] || 'bg-gray-100 text-gray-800 border-gray-200';
+  };
+
+  const formatAnswer = (answer: string) => {
+    const elements: JSX.Element[] = [];
+    let currentIndex = 0;
+    
+    // Split content by line breaks to process line by line
+    const lines = answer.split('\n');
+    
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].trim();
+      
+      // Skip empty lines
+      if (!line) continue;
+      
+      // Handle headers (lines that start with ** and end with :)
+      if (line.startsWith('**') && line.includes(':**')) {
+        const headerText = line.replace(/\*\*/g, '').replace(':', '');
+        elements.push(
+          <h4 key={`header-${currentIndex++}`} className="font-semibold text-gray-900 mt-4 mb-2 first:mt-0">
+            {headerText}
+          </h4>
+        );
+      }
+      // Handle bullet points
+      else if (line.startsWith('•')) {
+        const bulletText = line.replace('•', '').trim();
+        elements.push(
+          <div key={`bullet-${currentIndex++}`} className="flex items-start mb-2">
+            <span className="text-gray-600 mr-2 mt-1">•</span>
+            <span 
+              className="text-gray-700 flex-1"
+              dangerouslySetInnerHTML={{
+                __html: bulletText
+                  .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+                  .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+              }}
+            />
+          </div>
+        );
+      }
+      // Handle regular paragraphs
+      else {
+        elements.push(
+          <p 
+            key={`para-${currentIndex++}`} 
+            className="text-gray-700 mb-3"
+            dangerouslySetInnerHTML={{
+              __html: line
+                .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+                .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+            }}
+          />
+        );
+      }
+    }
+    
+    return elements;
   };
 
   return (
@@ -61,9 +120,9 @@ const FAQ: React.FC = () => {
               
               {expandedFaq === index && (
                 <div className="p-6 bg-white border-t border-gray-200">
-                  <p className="text-gray-700 leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  <div className="text-gray-700 leading-relaxed">
+                    {formatAnswer(faq.answer)}
+                  </div>
                 </div>
               )}
             </div>

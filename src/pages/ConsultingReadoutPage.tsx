@@ -23,13 +23,39 @@ const ConsultingReadoutPage: React.FC = () => {
     
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+        // Find the entry that is most visible
+        const visibleEntries = entries.filter(entry => entry.isIntersecting);
+        
+        if (visibleEntries.length > 0) {
+          // Get the entry with the highest intersection ratio (most visible)
+          const mostVisible = visibleEntries.reduce((prev, current) => 
+            prev.intersectionRatio > current.intersectionRatio ? prev : current
+          );
+          setActiveSection(mostVisible.target.id);
+        } else {
+          // If no sections are intersecting, find the closest one to the viewport
+          const sections = Array.from(mainContentRef.current?.querySelectorAll('section[id]') || []);
+          if (sections.length > 0) {
+            const scrollTop = window.scrollY;
+            let closestSection = sections[0];
+            let minDistance = Math.abs(sections[0].getBoundingClientRect().top);
+            
+            sections.forEach((section) => {
+              const distance = Math.abs(section.getBoundingClientRect().top);
+              if (distance < minDistance) {
+                minDistance = distance;
+                closestSection = section;
+              }
+            });
+            
+            setActiveSection(closestSection.id);
           }
-        });
+        }
       },
-      { rootMargin: '-30% 0px -70% 0px', threshold: 0.1 }
+      { 
+        rootMargin: '-20% 0px -60% 0px', 
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0] 
+      }
     );
 
     const sections = mainContentRef.current?.querySelectorAll('section[id]');
