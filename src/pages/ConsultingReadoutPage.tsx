@@ -3,7 +3,7 @@ import Sidebar from '../components/consulting/Sidebar';
 import ExecutiveSummary from '../components/consulting/sections/ExecutiveSummary';
 import History from '../components/consulting/sections/History';
 import Methodology from '../components/consulting/sections/Methodology';
-import GapsInProcess from '../components/consulting/sections/GapsInProcess';
+import QualitativeAnalysis from '../components/consulting/sections/QualitativeAnalysis';
 import IdealSituation from '../components/consulting/sections/IdealSituation';
 import DilemmaOverview from '../components/consulting/sections/DilemmaOverview';
 import ProjectApproach from '../components/consulting/sections/ProjectApproach';
@@ -13,6 +13,7 @@ import DocumentationArticles from '../components/consulting/sections/Documentati
 import FAQ from '../components/consulting/sections/FAQ';
 import NextSteps from '../components/consulting/sections/NextSteps';
 import { readoutData } from '../data/iqgeoReadoutData';
+import UseCasesAndCosts from '../components/consulting/sections/UseCasesAndCosts';
 
 const ConsultingReadoutPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState('executive-summary');
@@ -74,7 +75,7 @@ const ConsultingReadoutPage: React.FC = () => {
           <ExecutiveSummary />
           <History />
           <Methodology />
-          <GapsInProcess />
+          <QualitativeAnalysis />
           <IdealSituation />
           <DilemmaOverview />
           <ProjectApproach />
@@ -82,6 +83,7 @@ const ConsultingReadoutPage: React.FC = () => {
           <Documentation />
           <DocumentationArticles />
           <FAQ />
+          <UseCasesAndCosts />
           <NextSteps />
         </div>
       </main>

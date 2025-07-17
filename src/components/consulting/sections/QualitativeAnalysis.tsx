@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { AlertTriangle, BarChart3, Quote, ChevronDown, ChevronUp, Workflow, ArrowRight, ArrowDown } from 'lucide-react';
+import { AlertTriangle, BarChart3, Quote, ChevronDown, ChevronUp, Workflow, ArrowRight } from 'lucide-react';
 import { readoutData } from '../../../data/iqgeoReadoutData';
 
-const GapsInProcess: React.FC = () => {
+const QualitativeAnalysis: React.FC = () => {
   const [isProcessFlowExpanded, setIsProcessFlowExpanded] = useState(false);
 
   const toggleProcessFlow = () => {
@@ -23,8 +23,8 @@ const GapsInProcess: React.FC = () => {
     return 'bg-gray-500 text-white';
   };
 
-  const top5Gaps = readoutData.gapsInProcess.slice(0, 5);
-  const allGaps = readoutData.gapsInProcess;
+  const top5Gaps = readoutData.qualitativeAnalysis.slice(0, 5);
+  const allGaps = readoutData.qualitativeAnalysis;
 
   return (
     <section id="qualitative-analysis" className="scroll-mt-8">
@@ -513,4 +513,4 @@ const GapsInProcess: React.FC = () => {
   );
 };
 
-export default GapsInProcess;
+export default QualitativeAnalysis;

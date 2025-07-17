@@ -1,8 +1,8 @@
 import React from 'react';
-import { MessageSquare, Users, BookOpen, TrendingUp, AlertTriangle, UserCheck, Briefcase, UsersIcon, Wrench } from 'lucide-react';
+import { MessageSquare, TrendingUp, AlertTriangle, UserCheck, Briefcase, UsersIcon, Wrench } from 'lucide-react';
 import { readoutData } from '../../../data/iqgeoReadoutData';
 
-const iconMap = [MessageSquare, Users, BookOpen, TrendingUp];
+const iconMap = [MessageSquare, UsersIcon, UserCheck, TrendingUp];
 
 const ChangeManagement: React.FC = () => {
   return (
