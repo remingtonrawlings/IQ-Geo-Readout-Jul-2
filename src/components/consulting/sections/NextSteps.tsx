@@ -14,7 +14,7 @@ const NextSteps: React.FC = () => {
         
         <div className="prose prose-lg max-w-none mb-8">
           <p className="text-gray-700 leading-relaxed">
-            The success of this initiative depends on immediate, decisive action. The following steps 
+            The success of this initiative depends on your team's course of determined action. The following steps 
             must be executed in sequence to maintain momentum and ensure project success.
           </p>
         </div>

@@ -314,7 +314,7 @@ export const readoutData = {
       { "rank": 9, "title": "Deal Dependency Visualization", "hubspot": { "rating": "Red", "assessment": "No native feature exists to visualize relationships between deal records. Achieving this would require a highly complex and likely unsatisfactory custom build." }, "salesforce": { "rating": "Yellow", "assessment": "While not an out-of-the-box feature, the data model allows for linking opportunities. Visualization can be achieved with configuration and a low-cost or free AppExchange component." } },
       { "rank": 10, "title": "Advanced Partner Channel Management", "hubspot": { "rating": "Yellow", "assessment": "HubSpot offers a dedicated PRM software product. While perhaps less mature than Salesforce's ecosystem, it provides the necessary core functionality." }, "salesforce": { "rating": "Green", "assessment": "Offers a dedicated product (Experience Cloud for Partners) purpose-built for managing complex channel sales ecosystems." } },
       { "rank": 11, "title": "Effective & Reliable Mobile Application", "hubspot": { "rating": "Red", "assessment": "There is a strong consensus from field users that the mobile app is inadequate, \"bumpy,\" and not useful for enterprise field sales." }, "salesforce": { "rating": "Green", "assessment": "The mobile app is highly configurable, robust, and considered an enterprise-grade application." } },
-      { "rank": 12, "title": "Comprehensive Change Management & Training Plan", "hubspot": { "rating": "Yellow", "assessment": "Lower change management burden by building on a familiar platform. Risk is in ensuring new Enterprise features are adopted, but avoids a full re-learning curve." }, "salesforce": { "rating": "Red", "assessment": "The change management effort and risk are extremely high. This is the most difficult path from a people-process perspective, requiring a massive enablement program to mitigate significant productivity risks." } }
+      { "rank": 12, "title": "Comprehensive Change Management & Training Plan", "hubspot": { "rating": "Yellow", "assessment": "Lower change management burden by building on a familiar platform. Risk is in ensuring new Enterprise features are adopted, but avoids a full re-learning curve." }, "salesforce": { "rating": "Yellow", "assessment": "The change management effort and risk are extremely high. This is the most difficult path from a people-process perspective, requiring a massive enablement program to mitigate significant productivity risks." } }
     ],
     "costAnalysis": {
       "title": "CRM Platform TCO Analysis Summary for IQGeo (70 Sales Seats)",
@@ -443,24 +443,24 @@ export const readoutData = {
   "nextSteps": [
     {
       "step": 1,
-      "title": "Formalize the Salesforce-Centric Decision & Secure the Mandate",
+      "title": "Formalize the Path Forward Decision & Secure the Mandate",
       "timeline": "Immediate: Next 2 Weeks",
-      "action": "The executive leadership team must convene to review this strategic recommendation, formally accept the Salesforce-centric architecture with HubSpot marketing preservation, and secure the budget and resources for enterprise-grade implementation.",
-      "outcome": "A single, unified, and non-negotiable directive that empowers the organization to move forward with confidence in the strategic direction."
+      "action": "The executive leadership team must convene to review this strategic recommendation, formally accept the agreed upon architecture leveraging both HubSpot and Salesforce capabilities, and secure the budget and resources for enterprise-grade updates and implementation.",
+      "outcome": "A single, unified, and non-negotiable directive that empowers the organization to move forward with confidence in the strategic direction and chosen platform emphasis."
     },
     {
       "step": 2,
-      "title": "Assemble the Salesforce Implementation Team",
+      "title": "Assemble the CRM Implementation Team",
       "timeline": "Next 30 Days",
-      "action": "Appoint the dedicated Project Lead with Salesforce enterprise experience, identify cross-functional Departmental Champions, and begin selection of a certified Salesforce implementation partner with CPQ and enterprise integration expertise.",
-      "outcome": "A dedicated and accountable team with the specialized expertise to execute the Salesforce-centric transformation."
+      "action": "Appoint the dedicated Project Lead with enterprise CRM experience across both HubSpot and Salesforce ecosystems, identify cross-functional Departmental Champions, and begin selection of external resources to help guide the process, including platform agnostic strategic guidance, implementation oversight, change management optimization, certified implementation partners with CPQ and enterprise integration expertise.",
+      "outcome": "A dedicated and accountable team with the specialized expertise to execute the hybrid CRM transformation and navigate the complexities of dual-platform optimization."
     },
     {
       "step": 3,
       "title": "Commission the Project & Initiate Discovery Phase",
       "timeline": "Next 45 Days",
-      "action": "Officially charter the Salesforce implementation project, allocate the enterprise-grade budget, and authorize the team to begin detailed discovery focused on multi-currency requirements, CPQ configuration, and HubSpot integration architecture.",
-      "outcome": "The project is formally underway with clear focus on solving the 95% consensus financial operations crisis through Salesforce Sales Cloud Enterprise implementation."
+      "action": "Officially charter the CRM implementation project, allocate the enterprise-grade budget, and authorize the team to begin detailed discovery focused on multi-currency requirements, CPQ configuration, and cross-platform integration architecture between HubSpot and Salesforce.",
+      "outcome": "The project is formally underway with clear focus on solving the 95% consensus financial operations crisis through strategic CRM implementation that leverages the strengths of both platforms while addressing your specific go-to-market requirements."
     }
   ],
   "sections": [
